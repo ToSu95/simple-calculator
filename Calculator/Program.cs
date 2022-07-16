@@ -21,6 +21,7 @@ namespace Calculator
                 var number1 = GetInput();
 
 
+
                 Console.WriteLine("Jaką operację chcesz wykonać? Możliwe operacje to: '+', '-', '/', '*'");
                 var action = Console.ReadLine();
 
