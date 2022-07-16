@@ -14,25 +14,15 @@ namespace Calculator
             {
 
                 Console.WriteLine("Podaj 1 liczbę:");
-
-
-
-                
                 var number1 = GetInput();
-
-
 
                 Console.WriteLine("Jaką operację chcesz wykonać? Możliwe operacje to: '+', '-', '/', '*'");
                 var action = Console.ReadLine();
 
                 Console.WriteLine("Podaj 2 liczbę:");
-                
-
                 var number2 = GetInput();
 
                 var result = Calculate(number1, number2, action);
-
-               
 
                 Console.WriteLine("Wynik Twojego działania to: " + result);
             }
@@ -48,7 +38,6 @@ namespace Calculator
 
         }
         
-
         private static int GetInput()
         {
             if (!int.TryParse(Console.ReadLine(), out int input))
